@@ -41,16 +41,16 @@
             <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-sm font-bold text-amber-300 shadow-lg shadow-slate-950/20">T</div>
             <div>
                 <p class="text-xs uppercase tracking-[0.35em] text-slate-500">Tirta.id</p>
-                <p class="font-display text-lg font-semibold">Newsroom & blog</p>
+                <p class="font-display text-lg font-semibold">Air, kota, lingkungan</p>
             </div>
         </a>
 
         <div class="flex items-center gap-3">
             <a href="{{ route('home') }}" class="rounded-full border border-slate-900/10 bg-white/80 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm backdrop-blur">Home</a>
             @auth
-                <a href="{{ route('admin.dashboard') }}" class="rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-slate-950/20">Dashboard</a>
+                <a href="{{ route('admin.dashboard') }}" class="rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-slate-950/20">Redaksi</a>
             @else
-                <a href="{{ route('login') }}" class="rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-slate-950/20">Admin login</a>
+                <a href="{{ route('login') }}" class="rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-slate-950/20">Redaksi</a>
             @endauth
         </div>
     </header>

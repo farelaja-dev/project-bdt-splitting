@@ -2,8 +2,8 @@
 
 @section('content')
     <section class="mx-auto max-w-md rounded-[2rem] border border-slate-900/10 bg-white/80 p-8 shadow-xl shadow-slate-950/10 backdrop-blur">
-        <p class="text-xs uppercase tracking-[0.35em] text-slate-500">Admin login</p>
-        <h1 class="mt-2 font-display text-4xl text-slate-950">Masuk dashboard</h1>
+        <p class="text-xs uppercase tracking-[0.35em] text-slate-500">Ruang redaksi</p>
+        <h1 class="mt-2 font-display text-4xl text-slate-950">Masuk ke Tirta.id</h1>
 
         @if ($errors->any())
             <div class="mt-5 rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
@@ -29,11 +29,11 @@
                 Ingat sesi login
             </label>
 
-            <button type="submit" class="w-full rounded-2xl bg-slate-950 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-950/20">Masuk dashboard</button>
+            <button type="submit" class="w-full rounded-2xl bg-slate-950 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-950/20">Masuk</button>
         </form>
 
         <div class="mt-6 rounded-2xl bg-amber-50 px-4 py-3 text-sm text-slate-700">
-            Demo credential: {{ env('ADMIN_EMAIL', 'admin@tirta.id') }} / {{ env('ADMIN_PASSWORD', 'password') }}
+            Akses ini hanya untuk tim redaksi Tirta.id.
         </div>
     </section>
 @endsection

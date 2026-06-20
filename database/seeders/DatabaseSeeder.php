@@ -23,20 +23,20 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Post::updateOrCreate([
-            'slug' => 'selamat-datang-di-tirta-id',
+            'slug' => 'debit-sungai-kota-naik-saat-hujan-panjang',
         ], [
-            'title' => 'Selamat Datang di Tirta.id',
-            'excerpt' => 'Contoh artikel pertama untuk landing page publik.',
-            'content' => 'Ini adalah artikel awal untuk mengetes alur read publik dan write dari dashboard admin.',
+            'title' => 'Debit Sungai Kota Naik Saat Hujan Panjang',
+            'excerpt' => 'Pemantauan dini di bantaran sungai diperketat setelah hujan merata mengguyur wilayah hulu dan pusat kota.',
+            'content' => "Pemerintah kota memperketat pemantauan debit sungai setelah hujan panjang mengguyur kawasan hulu sejak Jumat malam.\n\nSejumlah pintu air dilaporkan masih berada pada status waspada. Warga di bantaran sungai diminta mengikuti informasi resmi dan menyiapkan dokumen penting apabila hujan kembali turun dengan intensitas tinggi.\n\nDinas terkait menyebut normalisasi saluran kecil dan pembersihan sedimen menjadi prioritas selama akhir pekan.",
             'published_at' => now(),
         ]);
 
         Post::updateOrCreate([
-            'slug' => 'pg-pool-ii-read-write-demo',
+            'slug' => 'warga-mendorong-sumur-resapan-di-permukiman-padat',
         ], [
-            'title' => 'PG Pool II Read Write Demo',
-            'excerpt' => 'Artikel demo untuk menunjukkan query read mengarah ke host baca sedangkan tulis diarahkan ke host write.',
-            'content' => 'Landing page dan detail artikel membaca data, sementara create, update, dan delete dari dashboard menulis ke host write.',
+            'title' => 'Warga Mendorong Sumur Resapan di Permukiman Padat',
+            'excerpt' => 'Inisiatif lingkungan di tingkat RT mulai digerakkan untuk menahan limpasan air hujan sebelum masuk ke drainase utama.',
+            'content' => "Kelompok warga di beberapa permukiman padat mulai membuat sumur resapan sederhana di halaman rumah dan fasilitas umum.\n\nProgram swadaya tersebut muncul setelah genangan berulang terjadi pada awal musim hujan. Selain menahan limpasan air, warga berharap sumur resapan dapat membantu menjaga cadangan air tanah.\n\nPengurus lingkungan menyatakan kegiatan akan diperluas ke gang-gang kecil setelah pendataan titik rawan selesai dilakukan.",
             'published_at' => now(),
         ]);
     }

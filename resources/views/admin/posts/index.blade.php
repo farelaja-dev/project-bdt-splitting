@@ -3,16 +3,16 @@
 @section('admin-content')
     <div class="flex flex-wrap items-center justify-between gap-4">
         <div>
-            <p class="text-xs uppercase tracking-[0.35em] text-slate-400">Blog CRUD</p>
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-400">Manajemen naskah</p>
             <h2 class="mt-2 font-display text-4xl text-white">Daftar Post</h2>
         </div>
         <a href="{{ route('admin.posts.create') }}" class="rounded-full bg-amber-300 px-5 py-3 text-sm font-semibold text-slate-950">+ Post Baru</a>
     </div>
 
     <div class="mt-6 rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-slate-300">
-        <p class="font-semibold text-white">PG Pool II indicator</p>
-        <p class="mt-2">Endpoint: {{ $dbHost }}:{{ $dbPort }}</p>
-        <p>PGPool II menentukan node baca/tulis di belakang layar.</p>
+        <p class="font-semibold text-white">Status sistem</p>
+        <p class="mt-2">Server data: {{ $dbHost }}:{{ $dbPort }}</p>
+        <p>Koneksi publikasi aktif.</p>
     </div>
 
     <div class="mt-6 grid gap-4">
@@ -20,7 +20,7 @@
             <article class="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
                 <div class="flex flex-wrap items-start justify-between gap-4">
                     <div>
-                        <p class="text-xs uppercase tracking-[0.25em] text-amber-200">{{ $post->published_at ? 'Published' : 'Draft' }}</p>
+                        <p class="text-xs uppercase tracking-[0.25em] text-amber-200">{{ $post->published_at ? 'Terbit' : 'Draf' }}</p>
                         <h3 class="mt-2 text-2xl font-bold text-white">{{ $post->title }}</h3>
                         <p class="mt-2 max-w-3xl text-slate-300">{{ $post->excerpt }}</p>
                     </div>

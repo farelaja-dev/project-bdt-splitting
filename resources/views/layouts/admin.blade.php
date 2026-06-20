@@ -4,13 +4,13 @@
     <div class="rounded-[2rem] border border-slate-900/10 bg-slate-950 p-6 text-white shadow-2xl shadow-slate-950/20 lg:p-8">
         <div class="flex items-center justify-between gap-4 border-b border-white/10 pb-5">
             <div>
-                <p class="text-xs uppercase tracking-[0.35em] text-slate-400">Admin Console</p>
-                <h1 class="mt-2 font-display text-3xl font-semibold text-white">Tirta dashboard</h1>
+                <p class="text-xs uppercase tracking-[0.35em] text-slate-400">Ruang redaksi</p>
+                <h1 class="mt-2 font-display text-3xl font-semibold text-white">Tirta.id</h1>
             </div>
 
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
-                <button type="submit" class="rounded-full bg-amber-300 px-4 py-2 text-sm font-semibold text-slate-950">Logout</button>
+                <button type="submit" class="rounded-full bg-amber-300 px-4 py-2 text-sm font-semibold text-slate-950">Keluar</button>
             </form>
         </div>
 

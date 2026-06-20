@@ -13,8 +13,8 @@
         </div>
 
         <div class="mt-8 flex flex-wrap gap-3">
-            <a href="{{ route('home') }}" class="rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white">Kembali ke landing</a>
-            <a href="{{ route('login') }}" class="rounded-full border border-slate-900/10 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-900">Masuk admin</a>
+            <a href="{{ route('home') }}" class="rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white">Kembali ke beranda</a>
+            <a href="{{ route('login') }}" class="rounded-full border border-slate-900/10 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-900">Ruang redaksi</a>
         </div>
     </article>
 @endsection
